@@ -48,6 +48,15 @@ REDIS_HOST=localhost
 REDIS_PORT=6379
 DATABASE_URL=postgres://admin:secret@localhost:5432/mutants
 ```
+---
+
+## Coverage
+
+```bash
+cd mutant-backend
+pnpm test:cov
+```
+The minimun acceptance criteria is 80%
 
 ---
 
@@ -58,18 +67,6 @@ cd mutant-frontend
 pnpm install
 pnpm dev
 ```
-
----
-
-## Run with Docker Compose
-
-```bash
-docker-compose up --build
-```
-
-This will only:
-- Start a PostgreSQL database
-- Start a Redis instance
 
 ---
 
